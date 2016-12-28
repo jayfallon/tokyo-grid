@@ -1,0 +1,15 @@
+{
+  "name": "grid-tokyo",
+  "version": "1.0.0",
+  "description": "Just playing with the grid",
+  "main": "gulpfile.js",
+  "repository": "https://github.com/jayfallon/grid-tokyi.git",
+  "author": "Jay Fallon <jayfallon@gmail.com> (http://jayfallon.net)",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^6.6.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "postcss-partial-import": "^3.1.0"
+  }
+}

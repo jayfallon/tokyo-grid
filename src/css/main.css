@@ -1,0 +1,15 @@
+@import "reset";
+
+body {
+	background-color: #FBF7F6;
+}
+
+.container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start; /* must have wrap enabled */
+
+	color: red;
+}
