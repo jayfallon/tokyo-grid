@@ -29,6 +29,7 @@ header {
 }
 
 footer {
+	background: #DF2900 url(/images/seamless.png);
 	padding: 40px 0;
 	border-top: 12px solid #972309;
 }
@@ -40,7 +41,7 @@ footer .footer-items {
 }
 
 .container {
-	background: #FBF7F6 url(/images/newspaper.png) 100% 100%;
+	background: #FBF7F6 url(/images/newspaper.png) 100% 100% fixed;
 	border-bottom: 1px solid orangeRed;
 }
 
