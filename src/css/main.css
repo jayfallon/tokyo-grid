@@ -1,15 +1,178 @@
 @import "reset";
 
+@lost flexbox flex;
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: #FBF7F6;
+	background-color: #DF2900;
+	position: relative;
+	color: #101010;
+	font-family: "anonymous-pro", serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	position: relative;
+}
+
+header {
+	background: #FBF7F6;
+	padding: 6px 6px 24px 100px;
+	color: #E12900;
+
+	& a {
+		color: #101010;
+	}
+}
+
+footer {
+	padding: 40px 0;
+	border-top: 12px solid #972309;
+}
+
+footer .footer-items {
+	margin: 0 auto;
+	width: 960px;
+	color: #EFEFEF;
 }
 
 .container {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start; /* must have wrap enabled */
+	background: #FBF7F6 url(/images/newspaper.png) 100% 100%;
+	border-bottom: 1px solid orangeRed;
+}
 
-	color: red;
+.items {
+	margin: 0 auto;
+	padding: 48px 0;
+	height: 100%;
+
+	lost-center: 960px;
+
+	& .item {
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+		lost-waffle: 1/3;
+	}
+
+}
+
+.item-content {
+	background: #FFFFFF url(../images/halftone.png);
+	padding: 8px;
+	height: 300px;
+
+	& .item-photo {
+		background-color: #A0A0A0;
+		background-size: 100%;
+		background-position: center center;
+		border-top: 1px solid  #999999;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+		border-left: 1px solid #999999;
+		height: 77%;
+	}
+
+	& .item-name h2{
+		padding: 50px 0 24px;
+		color: #DA270A;
+		font-family: "obliqua",sans-serif;
+		font-weight: bold;
+		font-size: 24px;
+		text-transform: capitalize;
+		text-align: center;
+	}
+
+	& .item-intro {
+		& p{
+			margin-bottom: 9px;
+		}
+		& a {
+			color: #101010;
+		}
+	}
+
+	& .item-text {
+		padding-top: 12px;
+		color: #1A1A1A;
+		font-family: "ff-market-web";
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
+.item:nth-child(5) {
+	box-shadow: none;
+	& .item-content {
+		background: transparent url(/images/rooster.png) center 15px no-repeat;
+	}
+}
+
+.ticket {
+	background: #DF2900 url(/images/seamless.png);
+	padding: 12px 12px 12px 24px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	position: absolute;
+	left: -37px;
+	top: 160px;
+	writing-mode: vertical-rl;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ticket a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: normal;
+	word-wrap: nowrap;
+}
+
+.ticket a span {
+	font-weight: bold;
+}
+
+.the-ring {
+	background-image: url(/images/the-ring.png);
+}
+
+.stylemepretty {
+	background-image: url(/images/stylemepretty.png);
+}
+
+.fiftythree {
+	background-image: url(/images/fiftythree.png);
+}
+
+.mineraltree {
+	background-image: url(/images/mineraltree.png);	
+}
+
+.unencoded {
+	background-image: url(/images/unencoded.png);
+}
+
+.magma-website {
+	background-image: url(/images/magma-website.png);
+}
+
+.fourltr {
+	background-image: url(/images/fourltr.png);
+}
+
+.instagram {
+	background-image: url(/images/instagram.png);
+}
+
+.mindtap {
+	background-image: url(/images/mindtap.png);
+}
+
+.cengage-brain {
+	background-image: url(/images/cengage-brain.png);
+}
+
+.css {
+	background-image: url(/images/css.png);
 }
